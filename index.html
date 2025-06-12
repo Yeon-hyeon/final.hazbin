@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hazbin Hotel Characters</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- 햄버거 메뉴 및 헤더 -->
+  <header class="main-header">
+    <h1>HAZBIN HOTEL</h1>
+    <p class="subtitle">Character Introduce & Information</p>
+
+    <div class="menu-icon" id="menuToggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <!-- 슬라이드 네비게이션 메뉴 -->
+  <nav class="side-menu" id="sideMenu">
+   <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="#" onclick="return false;">Instagram</a></li>
+</ul>
+
+  </nav>
+
+  <!-- 이미지 줄 1 -->
+  <div class="image-row">
+    <div class="image-item">
+      <a href="charlie.html" class="image-item">
+  <img src="images/charlie design change.jpg" alt="Charlie">
+  <div class="image-caption">Charlie</div>
+</a>
+
+    </div>
+    <div class="image-item">
+      <a href="vaggie.html">
+        <img src="images/vaggie.jpg" alt="Vaggie" />
+        <div class="image-caption">Vaggie</div>
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="angeldust.html">
+        <img src="images/angeldust.jpg" alt="Angel Dust" />
+        <div class="image-caption">Angel Dust</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- 이미지 줄 2 -->
+  <div class="image-row">
+    <div class="image-item">
+      <a href="alastor.html">
+        <img src="images/alastor.webp" alt="Alastor" />
+        <div class="image-caption">Alastor</div>
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="husk.html">
+        <img src="images/husk.jpg" alt="Husk" />
+        <div class="image-caption">Husk</div>
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="niffty.html">
+        <img src="images/nifffty.jpg" alt="Niffty" />
+        <div class="image-caption">Niffty</div>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const sideMenu = document.getElementById("sideMenu");
+    const closeBtn = document.getElementById("closeBtn");
+
+  menuToggle.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+
+  </script>
+</body>
+</html>
+

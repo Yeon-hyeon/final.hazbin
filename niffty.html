@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nifty - Hazbin Hotel</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+
+<!-- 헤더 및 햄버거 메뉴 -->
+<header class="main-header compact-header">
+<div class="back-button" onclick="goBack()">&#8592;</div>
+  <h1>HAZBIN HOTEL</h1>
+  <p class="subtitle">Character Introduce & Information</p>
+
+  <div class="menu-icon" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- 사이드 메뉴 -->
+<nav class="side-menu" id="sideMenu">
+  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+</nav>
+
+<!-- 뒤로가기 버튼 -->
+<div class="back-button" onclick="goBack()">&#8592;</div>
+
+<!-- 메인 콘텐츠 -->
+<main class="character-detail">
+  <div class="left-box">
+    <h2>Nifty <span class="subname">(The Cleaning Demon)</span></h2>
+    <img src="images/nifffty.jpg" alt="Nifty">
+  </div>
+  <div class="right-box">
+    <h3>설명</h3>
+    <p>
+      Nifty는 Hazbin Hotel의 청소를 담당하는 작은 악마입니다. 밝고 활기찬 성격으로, 주변을 깨끗하게 유지하는 것을 좋아합니다.
+    </p>
+    <p>
+      과거에는 혼란스러운 환경 속에서 살았지만, 호텔에 들어와서 자신의 역할을 발견하며 긍정적인 변화를 맞이하게 됩니다.
+    </p>
+    <p>
+      언제나 명랑하고 사교적이며, 다른 캐릭터들과 잘 어울리는 사랑스러운 존재입니다.
+    </p>
+    <h3>디자인 정보</h3>
+<h4>파일럿 버전</h4>
+<p>
+  - 초기 파일럿 에피소드에 등장한 디자인은 조금 더 심플하고 카툰스러운 느낌이 있습니다.<br>
+  - 주요 특징: 전체적으로 부드러운 색감과 가벼운 카툰체
+</p>
+
+<h4>공식 애니메이션 디자인</h4>
+<p>
+  - 정식 시리즈에 사용된 디자인은 디테일에 신경을 쓴 점이 잘 보이며 캐릭터의 개성이 잘 드러납니다.<br>
+  - 주요 변경점: 선명한 채도, 헤어 스타일과 유니폼
+</p>
+  </div>
+</main>
+
+<!-- 스크립트: 메뉴 토글 -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+   menuToggle.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

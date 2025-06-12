@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Husk - Hazbin Hotel</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+
+<!-- 헤더 및 햄버거 메뉴 -->
+<header class="main-header compact-header">
+<div class="back-button" onclick="goBack()">&#8592;</div>
+  <h1>HAZBIN HOTEL</h1>
+  <p class="subtitle">Character Introduce & Information</p>
+
+  <div class="menu-icon" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- 사이드 메뉴 -->
+<nav class="side-menu" id="sideMenu">
+ 
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+</nav>
+
+<!-- 뒤로가기 버튼 -->
+<div class="back-button" onclick="goBack()">&#8592;</div>
+
+<!-- 메인 콘텐츠 -->
+<main class="character-detail">
+  <div class="left-box">
+    <h2>Husk <span class="subname">(The Cat Demon)</span></h2>
+    <img src="images/husk.jpg" alt="Husk">
+  </div>
+  <div class="right-box">
+    <h3>설명</h3>
+    <p>
+      Husk는 Hazbin Hotel의 바텐더 역할을 맡은 고양이 악마입니다. 도박과 술에 찌든 인생을 살고 있으며, 항상 냉소적이고 피곤해 보입니다.
+    </p>
+    <p>
+      Alastor에 의해 호텔로 끌려오게 되었으며 처음에는 매우 비협조적이지만, 점차 호텔 일원으로 정착하게 됩니다.
+    </p>
+    <p>
+      겉보기에는 무관심하고 무뚝뚝하지만, 내면에는 따뜻한 감정이 숨어 있는 인물입니다.
+    </p>
+    <h3>디자인 정보</h3>
+<h4>파일럿 버전</h4>
+<p>
+  - 초기 파일럿 에피소드에 등장한 디자인은 조금 더 심플하고 카툰스러운 느낌이 있습니다.<br>
+  - 주요 특징: 전체적으로 부드러운 색감과 가벼운 카툰체
+</p>
+
+<h4>공식 애니메이션 디자인</h4>
+<p>
+  - 정식 시리즈에 사용된 디자인은 디테일에 신경을 쓴 점이 잘 보이며 캐릭터의 개성이 잘 드러납니다.<br>
+  - 주요 변경점: 선명한 채도, 헤어 스타일과 유니폼
+</p>
+  </div>
+</main>
+
+<!-- 스크립트: 메뉴 토글 -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+  menuToggle.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

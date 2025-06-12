@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charlie - Hazbin Hotel</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+ 
+
+<header class="main-header compact-header">
+  <div class="back-button" onclick="goBack()">&#8592;</div>
+  <a href="javascript:history.back()" class="back-button">&#8592;</a>
+  <h1>HAZBIN HOTEL</h1>
+  <p class="subtitle">Character Introduce & Information</p>
+  <div class="menu-icon" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- 슬라이드 사이드 메뉴 -->
+<nav class="side-menu" id="sideMenu">
+ 
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="#" onclick="return false;">Instagram</a></li>
+</ul>
+
+</nav>
+
+<main class="character-detail">
+  <div class="left-box">
+    <h2>Charlie <span class="subname">(Princess of Hell)</span></h2>
+    <img src="images/charlie design change.jpg" alt="Charlie">
+  </div>
+  <div class="right-box">
+    <h3>설명</h3>
+    <p>
+      Charlie는 지옥의 공주로, 폭력과 타락이 일상인 세계에 평화를 가져오려는 꿈을 가진 이상주의자입니다.
+      인간적인 면모를 강조하며 재활 호텔을 운영해 지옥의 죄인들을 구원하려고 합니다.
+    </p>
+    <p>
+      밝고 낙천적인 성격이며, 누구에게나 기회를 주려는 모습을 보여줍니다.
+    </p>
+    <p>
+      그녀의 호텔은 “Hazbin Hotel”로 불리며, 이곳이 시리즈의 주요 무대입니다.
+    </p>
+  <h3>디자인 정보</h3>
+<h4>파일럿 버전</h4>
+<p>
+  - 초기 파일럿 에피소드에 등장한 디자인은 조금 더 심플하고 조금 더 카툰스러운 느낌이 있습니다.<br>
+  - 주요 특징: 전체적으로 부드러운 색감과 가벼운 카툰체
+</p>
+<h4>공식 애니메이션 디자인</h4>
+<p>
+  - 정식 시리즈에 사용된 디자인은 디테일에 신경을 쓴 점이 잘 보이며 캐릭터의 개성이 잘 드러납니다.<br>
+  - 주요 변경점: 선명한 채도, 헤어 스타일과 유니폼
+</p>
+</main>
+  </div>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+    menuToggle.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
+

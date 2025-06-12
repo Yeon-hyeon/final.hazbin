@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaggie - Hazbin Hotel</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+
+<!-- 햄버거 메뉴 -->
+<header class="main-header compact-header">
+<div class="back-button" onclick="goBack()">&#8592;</div>
+  <h1>HAZBIN HOTEL</h1>
+  <p class="subtitle">Character Introduce & Information</p>
+
+  <div class="menu-icon" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- 사이드 메뉴 -->
+<nav class="side-menu" id="sideMenu">
+  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+</nav>
+
+<!-- 뒤로가기 버튼 -->
+<div class="back-button" onclick="goBack()">&#8592;</div>
+
+<main class="character-detail">
+  <div class="left-box">
+    <h2>Vaggie <span class="subname">(Charlie's Girlfriend)</span></h2>
+    <img src="images/vaggie.jpg" alt="Vaggie">
+  </div>
+  <div class="right-box">
+    <h3>설명</h3>
+    <p>
+      Vaggie는 Charlie의 가장 가까운 동료이자 연인으로, Hazbin Hotel 프로젝트를 전폭적으로 지지하고 있습니다.
+      그녀는 매우 직설적이고 열정적인 성격으로, 호텔의 안정을 해치는 위협에 단호하게 맞섭니다.
+    </p>
+    <p>
+      전투 능력이 뛰어나며, 때로는 Charlie의 낙천적인 태도에 현실적인 조언을 아끼지 않습니다.
+    </p>
+    <p>
+      그녀의 존재는 Charlie에게 큰 의지가 되며, 두 사람의 유대는 이야기의 중심적인 감정선 중 하나입니다.
+    </p>
+    <h3>디자인 정보</h3>
+<h4>파일럿 버전</h4>
+<p>
+  - 초기 파일럿 에피소드에 등장한 디자인은 조금 더 심플하고 카툰스러운 느낌이 있습니다.<br>
+  - 주요 특징: 전체적으로 부드러운 색감과 가벼운 카툰체
+</p>
+
+<h4>공식 애니메이션 디자인</h4>
+<p>
+  - 정식 시리즈에 사용된 디자인은 디테일에 신경을 쓴 점이 잘 보이며 캐릭터의 개성이 잘 드러납니다.<br>
+  - 주요 변경점: 선명한 채도, 헤어 스타일과 유니폼
+  </div>
+</main>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+   menuToggle.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

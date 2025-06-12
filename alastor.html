@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alastor - Hazbin Hotel</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+
+<!-- 햄버거 메뉴 -->
+<header class="main-header compact-header">
+<div class="back-button" onclick="goBack()">&#8592;</div>
+  <h1>HAZBIN HOTEL</h1>
+  <p class="subtitle">Character Introduce & Information</p>
+
+  <div class="menu-icon" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- 사이드 메뉴 -->
+<nav class="side-menu" id="sideMenu">
+ 
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+</nav>
+
+<!-- 뒤로가기 버튼 -->
+<div class="back-button" onclick="goBack()">&#8592;</div>
+
+<main class="character-detail">
+  <div class="left-box">
+    <h2>Alastor <span class="subname">(The Radio Demon)</span></h2>
+    <img src="images/alastor.webp" alt="Alastor">
+  </div>
+  <div class="right-box">
+    <h3>설명</h3>
+    <p>
+      Alastor는 "Radio Demon"으로 불리며, 지옥에서 가장 무서운 존재 중 하나입니다. 1930년대 스타일의 복고풍 라디오 음성과 말투가 특징이며,
+      항상 웃는 얼굴 뒤로 끔찍한 폭력성과 광기를 감추고 있습니다.
+    </p>
+    <p>
+      그는 Charlie의 호텔 프로젝트에 흥미를 느껴 자발적으로 참여하게 되지만, 그 목적은 순수하지 않습니다.
+      구원의 개념에 동의하진 않지만 혼란을 즐기기 위해 프로젝트에 힘을 실어줍니다.
+    </p>
+    <p>
+      알래스터는 무시무시한 능력을 가지고 있으며, 대부분의 지옥 주민들은 그를 두려워합니다.
+    </p>
+    <h3>디자인 정보</h3>
+<h4>파일럿 버전</h4>
+<p>
+  - Viziepop이 초기에 그린 디자인이며 심플하고 코믹스러운 느낌이 있습니다.<br>
+  - 주요 특징: 전체적으로 부드러운 색감과 가벼운 코믹스체
+</p>
+
+<h4>공식 애니메이션 디자인</h4>
+<p>
+  - 정식 시리즈에 사용된 디자인은 디테일에 신경을 쓴 점이 잘 보이며 캐릭터의 개성이 잘 드러납니다.<br>
+  - 주요 변경점: 선명한 채도, 헤어 스타일과 유니폼
+</p>
+  </div>
+</main>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+  menuToggle.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
